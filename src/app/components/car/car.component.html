@@ -1,0 +1,27 @@
+<p-table [value]="cars">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Brand Name</th>
+            <th>Car Name</th>
+            <th>Color Name</th>
+            <th>Daily Price</th>
+            <th>Model Year</th>
+            <th>Description</th>
+            <th>Is Deleted</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-car>
+        <tr>
+            <td>{{car.brandName}}</td>
+            <td>{{car.carName}}</td>
+            <td>{{car.colorName}}</td>
+            <td>{{car.dailyPrice}}</td>
+            <td>{{car.modelYear}}</td>
+            <td>{{car.description}}</td>
+            <td>{{car.isDeleted}}</td>
+            <a [routerLink] = ['/site', site.id, site.name, site.address ]>Buraya tikla!</a> 
+            <!-- <a routerLink="/cars/{{5}}/{{6}}">Buraya tikla!</a>  -->
+            <!-- //(click)="setCurrentIds(0,6)"  -->
+        </tr>
+    </ng-template>
+</p-table>

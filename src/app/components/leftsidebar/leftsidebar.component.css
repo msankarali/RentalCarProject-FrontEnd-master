@@ -1,0 +1,6 @@
+:host >>> .p-tieredmenu {
+    width: 100% !important;
+}
+:host >>> .p-tieredmenu .p-submenu-list{
+    min-width: 0%;
+}
